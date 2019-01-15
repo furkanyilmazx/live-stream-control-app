@@ -1,9 +1,10 @@
-import { HomePage, ConnectedPage } from './Pages';
+import { HomePage, ConnectedPage } from './pages';
+import {DefaultLayout} from './layouts'
 
 export const routes = [
   {
     path: '/',
-    component: HomePage,
+    component: DefaultLayout,
   },
   {
     path: '/connected',

@@ -8,6 +8,8 @@ import registerServiceWorker from './registerServiceWorker';
 import { combinedReducers } from './store';
 import services from './services';
 
+import 'antd/dist/antd.css';
+
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(combinedReducers, applyMiddleware(sagaMiddleware));
